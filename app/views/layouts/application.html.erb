@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>新町通信区</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <div id="root">
+      <div class="outline" id="outline-top"></div>
+      <div class="outline" id="outline-bottom"></div>
+      <div class="outline" id="outline-right"></div>
+      <div class="outline" id="outline-left"></div>
+      <div class="outline-cover" id="outline-cover-top"></div>
+      <div class="outline-cover" id="outline-cover-bottom"></div>
+      <div id="content">
+        <div class="header">
+          <div class="header-button float-left"> <a href="/index/index" class="header-button-link">新町通信区</a></div>
+          <div class="header-button float-right"><a href="/index/login" class="header-button-link">login</a></div>
+          <div class="header-button float-right"><a href="/index/photo" class="header-button-link">photo</a></div>
+          <div class="header-button float-right"><a href="/index/blog"  class="header-button-link">blog</a></div>
+          <div>&nbsp;</div>
+        </div>
+        <hr width="100%">
+        <div class="yield-out">
+          <%= yield %>
+          <div id="bottom-adjustment"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
